@@ -1,0 +1,34 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+    <body>
+        <div id="titles">
+            <h1>Generate a <br> <span class="green-color">random password</span></h1>
+            <h3>Never use an insecure password again.</h3>
+        </div>
+        
+        <div id="copy-password">
+            <input type="text" disabled id="copy-layout">
+            <button id="copy-btn" onclick="copyToClipboard()">
+                <span class="material-icons">content_copy</span>
+            </button>
+        </div>
+        
+        <div id="password-lenght">
+            <label class="settings-text">Password Lenght</label>
+            <div id="slider-container">
+                <input type="range" min="8" max="30" step="1" id="range" class="slider" value="12">
+                <span class="settings-text" id="range-number">12</span>
+            </div>
+        </div>
+        <button id="generate-btn" onclick="generatePassword()">Generate Password</button>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
